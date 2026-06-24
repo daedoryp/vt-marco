@@ -1,0 +1,26 @@
+# Dépendances
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env
+.env
+.env.*
+
+# ===== Réservé évaluateur — NE PAS COMMITER =====
+# Solutions des exercices
+solutions/
+**/solution*
+**/*.solution.*
+
+# Guide complet de l'évaluateur (contient les réponses attendues)
+GUIDE-ENTRETIEN.md
+
+# OS / éditeurs
+.DS_Store
+.vscode/
+.idea/

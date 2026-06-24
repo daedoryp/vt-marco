@@ -1,0 +1,15 @@
+{
+  "name": "vt-marco",
+  "version": "1.0.0",
+  "description": "Exercices entretien technique - Developpeur Full-Stack Node.js / TypeScript",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "event-loop": "node exercises/03-event-loop/event-loop.cjs",
+    "balance": "node exercises/04-concurrency-balance/balance.js",
+    "streams": "node exercises/05-streams-enedis/process-csv.js",
+    "tdd": "node --test exercises/06-tdd-payment/payment.test.js",
+    "debug": "node exercises/07-debug-idempotency/webhook.js"
+  },
+  "license": "UNLICENSED"
+}
