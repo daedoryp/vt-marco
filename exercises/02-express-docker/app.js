@@ -20,6 +20,15 @@ async function getUsers() {
   ];
 }
 
+app.get("/users", async (req, res) => {
+  const users = await getUsers();
+  if (users) res.json({ status: "ok", service: "vt-marco-api", data: users })
+  else {
+      res.status(404)
+      res.json({ status: "ko", service: "vt-marco-api", "message": "empty DB" })
+    }
+});
+
 // 👉 À COMPLÉTER : GET /users (réponse JSON + gestion d'erreur)
 
 // 👉 À COMPLÉTER : middleware d'erreur
